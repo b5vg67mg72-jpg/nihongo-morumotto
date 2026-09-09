@@ -51,6 +51,21 @@
     @media(max-width:860px){.featured-preview{grid-template-columns:1fr}.featured-pages{padding:22px}.featured-copy{padding:30px}.preview-grid{grid-template-columns:1fr}.proof-note{align-items:flex-start;flex-direction:column}.trust-grid{grid-template-columns:1fr 1fr}.official-account{align-items:flex-start;flex-direction:column}}
     @media(max-width:520px){.hero{min-height:720px;padding:70px 0 64px;background-position:62% center}.hero h1{font-size:47px}.hero .actions{display:grid}.hero .button{width:100%}.nav-inner{height:68px}.logo{width:46px;height:46px}.nav-links a.study-link{display:inline-flex;padding:8px 10px;font-size:13px}section{padding:68px 0}.featured-pages{display:block;padding:16px}.featured-pages .page-preview:first-child{display:none}.featured-pages .page-preview img{border-radius:7px}.page-preview button{right:8px;bottom:8px}.featured-copy{padding:25px}.featured-copy h3{font-size:30px}.preview-pages{padding:13px;gap:9px}.preview-pages .page-preview:first-child{display:none}.preview-pages{grid-template-columns:1fr}.trust-shell{padding:24px}.trust-grid{grid-template-columns:1fr}.official-account .button{width:100%}.dialog-image-wrap{padding:10px}}
   </style>
+  <style>
+    /* Final editorial polish: consistent rhythm, hierarchy, and interaction. */
+    :root{--content:1160px;--section-space:clamp(72px,8vw,104px)}
+    body{font-size:16px}.wrap{width:min(var(--content),calc(100% - 48px))}
+    section{padding:var(--section-space) 0}.section-head{max-width:780px;margin-bottom:42px}.section-head p{max-width:700px;line-height:1.7}
+    .nav-inner{height:72px}.nav-links a{font-weight:750}.button{min-height:48px;padding-inline:22px;border-width:1px;letter-spacing:-.01em}
+    .hero{min-height:calc(100svh - 72px)}.hero h1{max-width:720px}.hero .lede{line-height:1.55}
+    .path,.offer,.step,.about-card,.faq details,.preview-card,.trust-card{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+    .path:hover,.offer:hover,.step:hover,.preview-card:hover,.trust-card:hover{transform:translateY(-3px);border-color:#c9c1b6;box-shadow:0 18px 42px rgba(39,44,41,.1)}
+    .offer h3,.preview-copy h3,.path h3{line-height:1.18}.offer li{margin-block:7px}.price{letter-spacing:-.04em}
+    .faq details[open]{border-color:#c7beb2;box-shadow:0 10px 26px rgba(39,44,41,.07)}.faq summary{font-size:16px}
+    .footer{border-top:1px solid var(--line);background:var(--paper)}
+    @media(max-width:860px){.wrap{width:min(100% - 32px,var(--content))}.hero{min-height:720px}.trust-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){.wrap{width:min(100% - 28px,var(--content))}.hero h1{font-size:clamp(42px,13vw,54px)}.portrait{aspect-ratio:1;border-radius:50%}.trust-grid{grid-template-columns:1fr}.community-copy h2{font-size:34px}.featured-copy,.offer,.path,.about-card{padding:24px}}
+  </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
