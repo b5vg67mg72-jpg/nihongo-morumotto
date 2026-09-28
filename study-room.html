@@ -1031,6 +1031,18 @@ body{font-size:16px}.site-header{min-height:72px;padding-inline:max(24px,calc((1
 .practice-section{grid-template-columns:minmax(280px,.8fr) minmax(400px,1.2fr)}.quiz-panel{box-shadow:0 24px 60px rgba(0,0,0,.22)}
 .upgrade-banner{width:min(calc(100% - 48px),var(--page-width));margin:0 auto 84px;padding:36px;border-radius:var(--radius)}
 .site-footer{padding:32px max(24px,calc((100vw - var(--page-width))/2));font-size:.9rem}.site-footer a:first-child{color:var(--ink);font-weight:850}
+/* Final brand polish */
+.site-header{box-shadow:0 5px 20px rgba(39,44,41,.05)}
+.brand-name span:first-child{font-size:.92rem;letter-spacing:-.02em}.brand-name span:last-child{font-size:1rem;letter-spacing:-.02em}
+.main-nav a{transition:background .18s ease,color .18s ease,transform .18s ease}.main-nav a:hover{transform:translateY(-1px)}
+.main-nav .sales-link{box-shadow:0 6px 16px rgba(39,44,41,.12)}
+.hero-shade{background:linear-gradient(90deg,rgba(13,18,18,.84) 0%,rgba(13,18,18,.58) 46%,rgba(13,18,18,.13) 100%),linear-gradient(0deg,rgba(250,248,243,.3),rgba(250,248,243,0))}
+.hero-copy{max-width:600px}.hero-actions .button{box-shadow:0 7px 18px rgba(0,0,0,.14)}
+.hero-note{margin:16px 0 0;color:rgba(255,255,255,.78);font-size:.86rem}
+.progress-band{box-shadow:0 8px 24px rgba(39,44,41,.04)}
+.section-heading p{max-width:700px}.upgrade-banner{border:1px solid rgba(255,255,255,.7);box-shadow:0 18px 45px rgba(39,42,35,.1)}
+.site-footer{background:#f1ece3}
+@media(max-width:700px){.main-nav a.sales-link{box-shadow:none}.hero-note{font-size:.8rem}}
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid rgba(180,86,58,.38);outline-offset:3px}
 @media(max-width:980px){.site-header{padding-inline:20px}.section,.practice-section{padding-inline:24px}.progress-band{padding-inline:0}.practice-section{grid-template-columns:1fr}.upgrade-banner{width:calc(100% - 48px)}}
 @media(max-width:700px){.site-header{position:sticky;align-items:center;flex-direction:row;min-height:68px;padding-block:8px}.brand-name{display:none}.brand-mark{width:46px;height:46px;flex-basis:46px}.main-nav{width:auto}.main-nav a{padding:8px 10px}.main-nav a:not(.sales-link):not([href="#kana"]):not([href="#practice"]){display:none}html{scroll-padding-top:78px}.hero{min-height:700px;padding-top:92px;padding-inline:20px}.hero h1{font-size:clamp(3rem,15vw,4.4rem)}.progress-band{grid-template-columns:repeat(2,1fr)}.progress-band div:nth-child(2){border-right:0}.progress-band div{padding:20px 22px}.section,.practice-section{padding-inline:20px}.upgrade-banner{width:calc(100% - 40px);padding:26px}.site-footer{padding-inline:20px}}
@@ -1043,8 +1055,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
       <a class="brand" href="#top" aria-label="にほんごモルモット home">
         <span class="brand-mark" aria-hidden="true"><span>🐹</span><img src="./assets/brand-mascot.webp" alt="" width="104" height="104" onerror="this.remove()" /></span>
         <span class="brand-name">
-          <span>にほんご</span>
-          <span>モルモット</span>
+          <span>Nihongo</span>
+          <span>Morumotto</span>
         </span>
       </a>
       <nav class="main-nav" aria-label="Primary navigation">
@@ -1073,6 +1085,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
             <a class="button primary" href="#practice">Start practice</a>
             <a class="button secondary" href="#kana">Study kana</a>
           </div>
+          <p class="hero-note">Free to use · no sign-up · learn at your own pace</p>
         </div>
       </section>
 
@@ -1249,8 +1262,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
     </main>
 
     <footer class="site-footer">
-      <a href="./index.html">Nihongo Morumotto</a>
-      <span>Small steps, stronger Japanese.</span>
+      <a href="./index.html#about">Founded by Lizzy · Based in Japan</a>
+      <span>Created with native Japanese collaborators.</span>
       <a href="./index.html#start">Explore learning products →</a>
     </footer>
 
